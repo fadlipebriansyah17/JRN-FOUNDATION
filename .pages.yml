@@ -1,0 +1,39 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: home
+    label: Edit Isi Website
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero_kicker
+        label: Teks Kecil Atas (Kicker)
+        type: string
+        default: JAGA RAYA NUSANTARA FOUNDATION
+      - name: hero_title
+        label: Judul Utama (Besar)
+        type: string
+        default: Menjaga Nusantara, Merawat Masa Depan.
+      - name: hero_sub
+        label: Deskripsi Bawah Judul
+        type: text
+        default: Bersama melestarikan alam, memberdayakan masyarakat, dan merawat warisan budaya Nusantara untuk generasi mendatang.
+      - name: hero_image
+        label: Foto Latar Utama (Hero)
+        type: image
+      - name: about_title
+        label: Judul Bagian Tentang
+        type: string
+        default: Melestarikan Nusantara.
+      - name: about_text_1
+        label: Paragraf Tentang 1
+        type: text
+      - name: about_text_2
+        label: Paragraf Tentang 2
+        type: text
+      - name: about_image
+        label: Foto Bagian Tentang
+        type: image
