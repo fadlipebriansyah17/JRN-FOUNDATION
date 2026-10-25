@@ -1311,20 +1311,25 @@ footer {
     if (e.key === 'Escape') closeMenu();
   });
 <script>
-  fetch('/content/home.json')
+  fetch('/content/home.json?t=' + new Date().getTime())
     .then(function(res) { return res.json(); })
     .then(function(data) {
       if (data.hero_kicker) document.getElementById('cms-hero-kicker').textContent = data.hero_kicker;
       if (data.hero_title) document.getElementById('cms-hero-title').innerHTML = data.hero_title;
       if (data.hero_sub) document.getElementById('cms-hero-sub').textContent = data.hero_sub;
-      if (data.hero_image) document.getElementById('cms-hero-image').src = data.hero_image;
+      if (data.hero_image) {
+        var heroImg = data.hero_image.charAt(0) === '/' ? data.hero_image : '/' + data.hero_image;
+        document.getElementById('cms-hero-image').src = heroImg;
+      }
       if (data.about_title) document.getElementById('cms-about-title').innerHTML = data.about_title;
       if (data.about_text_1) document.getElementById('cms-about-text-1').textContent = data.about_text_1;
       if (data.about_text_2) document.getElementById('cms-about-text-2').textContent = data.about_text_2;
-      if (data.about_image) document.getElementById('cms-about-image').src = data.about_image;
+      if (data.about_image) {
+        var aboutImg = data.about_image.charAt(0) === '/' ? data.about_image : '/' + data.about_image;
+        document.getElementById('cms-about-image').src = aboutImg;
+      }
     })
-    .catch(function(err) { console.log('Menunggu data admin:', err); });
+    .catch(function(err) { console.error('Gagal memuat data CMS:', err); });
 </script>
-
 </body>
 </html>
