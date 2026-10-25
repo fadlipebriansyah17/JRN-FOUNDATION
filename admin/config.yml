@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: fadlipebriansyah17/JRN-FOUNDATION
+  name: git-gateway
   branch: main
 
 media_folder: "images"
@@ -15,9 +14,5 @@ collections:
         file: "content/home.json"
         format: "json"
         fields:
-          - label: "Judul Website"
-            name: "title"
-            widget: "string"
-          - label: "Deskripsi Website"
-            name: "description"
-            widget: "text"
+          - { label: "Judul Website", name: "title", widget: "string" }
+          - { label: "Deskripsi Website", name: "description", widget: "text" }
