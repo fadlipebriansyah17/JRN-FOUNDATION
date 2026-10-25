@@ -1,1 +1,23 @@
+backend:
+  name: github
+  repo: fadlipebriansyah17/JRN-FOUNDATION
+  branch: main
 
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Halaman Website"
+    files:
+      - name: "home"
+        label: "Halaman Utama"
+        file: "content/home.json"
+        format: "json"
+        fields:
+          - label: "Judul Website"
+            name: "title"
+            widget: "string"
+          - label: "Deskripsi Website"
+            name: "description"
+            widget: "text"
