@@ -1,18 +1,121 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: fadlipebriansyah17/GANTI-NAMA-REPO
   branch: main
-
-media_folder: "images"
-public_folder: "/images"
-
+  base_url: https://GANTI-NAMA-PROJECT.pages.dev   # alamat website Anda di Cloudflare
+  auth_endpoint: api/auth
+locale: id
+media_folder: images/uploads
+public_folder: /images/uploads
 collections:
-  - name: "pages"
-    label: "Halaman Website"
+  - name: situs
+    label: Isi Website
     files:
-      - name: "home"
-        label: "Halaman Utama"
-        file: "content/home.json"
-        format: "json"
+      - name: site
+        label: Semua Konten Website
+        file: content/site.json
         fields:
-          - { label: "Judul Website", name: "title", widget: "string" }
-          - { label: "Deskripsi Website", name: "description", widget: "text" }
+          - label: Halaman Utama (Hero)
+            name: hero
+            widget: object
+            fields:
+              - {label: Foto Utama, name: image, widget: image}
+              - {label: Teks Kecil di Atas, name: kicker, widget: string}
+              - {label: Judul Baris 1, name: title_1, widget: string}
+              - {label: Judul Kata Miring, name: title_em, widget: string}
+              - {label: Judul Baris 3, name: title_3, widget: string}
+              - {label: Deskripsi, name: subtitle, widget: text}
+              - {label: Tombol 1, name: btn_1, widget: string}
+              - {label: Tombol 2, name: btn_2, widget: string}
+              - label: Angka Statistik
+                name: stats
+                widget: list
+                summary: "{{fields.num}} - {{fields.label}}"
+                fields:
+                  - {label: Angka, name: num, widget: string}
+                  - {label: Keterangan, name: label, widget: string}
+          - label: Tentang Kami
+            name: about
+            widget: object
+            fields:
+              - {label: Judul Baris 1, name: line_1, widget: string}
+              - {label: Judul Baris 2, name: line_2, widget: string}
+              - {label: Judul Kata Miring, name: line_em, widget: string}
+              - label: Paragraf
+                name: paragraphs
+                widget: list
+                field: {label: Isi Paragraf, name: text, widget: text}
+              - {label: Teks Tombol, name: cta, widget: string}
+              - {label: Foto Besar, name: image_main, widget: image}
+              - {label: Foto Kecil, name: image_accent, widget: image}
+              - {label: Angka Tahun, name: badge_num, widget: string}
+              - {label: Keterangan Tahun, name: badge_text, widget: string}
+          - label: Empat Pilar
+            name: pillars
+            widget: object
+            fields:
+              - {label: Pengantar, name: intro, widget: text}
+              - label: Daftar Pilar
+                name: items
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - {label: Ikon (emoji), name: icon, widget: string}
+                  - {label: Judul, name: title, widget: string}
+                  - {label: Deskripsi, name: text, widget: text}
+          - label: Kutipan
+            name: quote
+            widget: object
+            fields:
+              - {label: Kutipan, name: text, widget: text}
+              - {label: Sumber Kutipan, name: cite, widget: string}
+              - label: 3 Foto Kutipan
+                name: images
+                widget: list
+                min: 3
+                max: 3
+                field: {label: Foto, name: image, widget: image}
+          - label: Program
+            name: program
+            widget: object
+            fields:
+              - {label: Judul, name: heading, widget: string}
+              - {label: Deskripsi, name: text, widget: text}
+              - label: Kartu Program
+                name: cards
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - {label: Kategori, name: tag, widget: string}
+                  - {label: Judul, name: title, widget: string}
+                  - {label: Foto, name: image, widget: image}
+          - label: Kegiatan Terkini (Berita)
+            name: news
+            widget: list
+            summary: "{{fields.date}} - {{fields.title}}"
+            fields:
+              - {label: Kategori, name: tag, widget: string}
+              - {label: Tanggal (tulis bebas), name: date, widget: string}
+              - {label: Judul, name: title, widget: string}
+              - {label: Foto, name: image, widget: image}
+          - label: Ajakan Bergabung
+            name: join
+            widget: object
+            fields:
+              - {label: Foto Latar, name: image, widget: image}
+              - {label: Teks Kecil, name: kicker, widget: string}
+              - {label: Judul, name: heading, widget: string}
+              - {label: Deskripsi, name: text, widget: text}
+              - {label: Tombol 1, name: btn_1, widget: string}
+              - {label: Tombol 2, name: btn_2, widget: string}
+          - label: Kontak dan Footer
+            name: contact
+            widget: object
+            fields:
+              - {label: Deskripsi Footer, name: description, widget: text}
+              - {label: Alamat, name: address, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: Link Instagram, name: instagram, widget: string}
+              - {label: Link Facebook, name: facebook, widget: string}
+              - {label: Link YouTube, name: youtube, widget: string}
+              - {label: Teks Copyright, name: copyright, widget: string}
