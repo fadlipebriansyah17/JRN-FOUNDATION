@@ -1,13 +1,13 @@
 {
   "hero": {
-    "image": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=2400&q=90",
-    "kicker": "Jaga Raya Nusantara Foundation",
     "title_1": "Menjaga",
-    "title_em": "Nusantara",
     "title_3": "Merawat Masa Depan.",
-    "subtitle": "Bersama melestarikan alam, memberdayakan masyarakat, dan merawat warisan budaya Nusantara untuk generasi mendatang.",
     "btn_1": "Kenali JRN",
     "btn_2": "Lihat Program",
+    "title_em": "Nusantara",
+    "kicker": "Jaga Raya Nusantara Foundation",
+    "subtitle": "Bersama melestarikan alam, memberdayakan masyarakat, dan merawat warisan budaya Nusantara untuk generasi mendatang.",
+    "image": "/images/uploads/whatsapp-image-2026-10-25-at-15.10.49.jpeg",
     "stats": [
       {
         "num": "12+",
@@ -28,18 +28,18 @@
     ]
   },
   "about": {
-    "line_1": "Menjaga alam.",
-    "line_2": "Menguatkan masyarakat.",
-    "line_em": "Melestarikan Nusantara.",
     "paragraphs": [
       "JRN Foundation adalah organisasi nirlaba Indonesia yang bergerak di bidang konservasi lingkungan, pemberdayaan masyarakat, dan perlindungan keanekaragaman hayati.",
       "Kami percaya bahwa alam, manusia, dan budaya adalah satu kesatuan yang saling menghidupi. Karena itu, kami hadir bukan hanya untuk merawat hutan dan laut, tetapi juga untuk memperkuat komunitas lokal dan melestarikan tradisi seni budaya Nusantara."
     ],
-    "cta": "Selengkapnya tentang kami",
-    "image_main": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=85",
-    "image_accent": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=400&q=80",
+    "line_1": "Menjaga alam.",
+    "line_2": "Menguatkan masyarakat.",
+    "badge_text": "Berdiri sejak",
     "badge_num": "2012",
-    "badge_text": "Berdiri sejak"
+    "image_accent": "/images/uploads/464564654.jpeg",
+    "cta": "Selengkapnya tentang kami",
+    "line_em": "Melestarikan Nusantara.",
+    "image_main": "/images/uploads/543535434.jpeg"
   },
   "pillars": {
     "intro": "Seluruh kerja JRN Foundation bertumpu pada empat pilar utama yang saling berhubungan — karena alam yang sehat membutuhkan masyarakat yang berdaya, budaya yang hidup, dan advokasi yang kuat.",
