@@ -1,0 +1,152 @@
+{
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=2400&q=90",
+    "kicker": "Jaga Raya Nusantara Foundation",
+    "title_1": "Menjaga",
+    "title_em": "Nusantara",
+    "title_3": "Merawat Masa Depan.",
+    "subtitle": "Bersama melestarikan alam, memberdayakan masyarakat, dan merawat warisan budaya Nusantara untuk generasi mendatang.",
+    "btn_1": "Kenali JRN",
+    "btn_2": "Lihat Program",
+    "stats": [
+      {
+        "num": "12+",
+        "label": "Tahun Bergerak"
+      },
+      {
+        "num": "47",
+        "label": "Program Aktif"
+      },
+      {
+        "num": "120k",
+        "label": "Pohon Ditanam"
+      },
+      {
+        "num": "38",
+        "label": "Provinsi Dijangkau"
+      }
+    ]
+  },
+  "about": {
+    "line_1": "Menjaga alam.",
+    "line_2": "Menguatkan masyarakat.",
+    "line_em": "Melestarikan Nusantara.",
+    "paragraphs": [
+      "JRN Foundation adalah organisasi nirlaba Indonesia yang bergerak di bidang konservasi lingkungan, pemberdayaan masyarakat, dan perlindungan keanekaragaman hayati.",
+      "Kami percaya bahwa alam, manusia, dan budaya adalah satu kesatuan yang saling menghidupi. Karena itu, kami hadir bukan hanya untuk merawat hutan dan laut, tetapi juga untuk memperkuat komunitas lokal dan melestarikan tradisi seni budaya Nusantara."
+    ],
+    "cta": "Selengkapnya tentang kami",
+    "image_main": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=85",
+    "image_accent": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=400&q=80",
+    "badge_num": "2012",
+    "badge_text": "Berdiri sejak"
+  },
+  "pillars": {
+    "intro": "Seluruh kerja JRN Foundation bertumpu pada empat pilar utama yang saling berhubungan — karena alam yang sehat membutuhkan masyarakat yang berdaya, budaya yang hidup, dan advokasi yang kuat.",
+    "items": [
+      {
+        "icon": "🌿",
+        "title": "Konservasi Alam",
+        "text": "Restorasi hutan kritis, perlindungan satwa endemik, penanaman pohon, dan edukasi ekosistem di seluruh Nusantara."
+      },
+      {
+        "icon": "🤝",
+        "title": "Pemberdayaan Masyarakat",
+        "text": "Ekonomi lokal berkelanjutan, pelatihan keterampilan ramah lingkungan, serta akses pendidikan dan kesehatan."
+      },
+      {
+        "icon": "📢",
+        "title": "Kampanye & Advokasi",
+        "text": "Membangun kesadaran lingkungan dan mendorong kolaborasi dengan pemerintah, swasta, dan komunitas global."
+      },
+      {
+        "icon": "🎭",
+        "title": "Pelestarian Seni & Budaya",
+        "text": "Melestarikan tradisi, seni daerah, dan perfilman nasional sebagai bagian dari identitas Nusantara."
+      }
+    ]
+  },
+  "quote": {
+    "text": "Alam, manusia, dan budaya adalah satu kesatuan yang tak bisa dipisahkan — merawat salah satunya berarti merawat semuanya.",
+    "cite": "— Visi JRN Foundation",
+    "images": [
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=400&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=400&q=80"
+    ]
+  },
+  "program": {
+    "heading": "Program yang memberi dampak nyata di lapangan.",
+    "text": "Dari restorasi hutan hingga festival budaya lokal — setiap program JRN dirancang untuk memberi dampak jangka panjang bagi alam dan manusia Nusantara.",
+    "cards": [
+      {
+        "tag": "Lingkungan",
+        "title": "Restorasi Hutan & Alam",
+        "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "tag": "Konservasi",
+        "title": "Keanekaragaman Hayati",
+        "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "tag": "Pendidikan",
+        "title": "Edukasi Lingkungan",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "tag": "Ekonomi",
+        "title": "Ekonomi Berkelanjutan",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=80"
+      },
+      {
+        "tag": "Budaya",
+        "title": "Seni & Budaya Lokal",
+        "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
+      }
+    ]
+  },
+  "news": [
+    {
+      "tag": "Konservasi Alam",
+      "date": "12 Oktober 2025",
+      "title": "Penanaman Mangrove Bersama Masyarakat Pesisir",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "tag": "Pemberdayaan",
+      "date": "8 Oktober 2025",
+      "title": "Pelatihan Ekonomi Kreatif untuk Perempuan Desa",
+      "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "tag": "Pendidikan",
+      "date": "3 Oktober 2025",
+      "title": "Edukasi Lingkungan untuk Generasi Muda Indonesia",
+      "image": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "tag": "Seni & Budaya",
+      "date": "28 September 2025",
+      "title": "Festival Budaya Lokal di Nusa Tenggara",
+      "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "join": {
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=85",
+    "kicker": "Bergabung bersama kami",
+    "heading": "Mari Bergerak Bersama untuk Nusantara.",
+    "text": "Karena menjaga alam dan budaya adalah tanggung jawab kita bersama — individu, komunitas, perusahaan, dan pemerintah.",
+    "btn_1": "Hubungi Kami",
+    "btn_2": "Pelajari Lebih Lanjut"
+  },
+  "contact": {
+    "description": "Jaga Raya Nusantara Foundation — menjaga alam, menguatkan masyarakat, dan melestarikan budaya Indonesia sejak 2012.",
+    "address": "Jl. Nusantara No. 1, Indonesia",
+    "email": "info@jrnfoundation.or.id",
+    "instagram": "#",
+    "facebook": "#",
+    "youtube": "#",
+    "copyright": "© 2025 Jaga Raya Nusantara Foundation. All rights reserved."
+  }
+}
