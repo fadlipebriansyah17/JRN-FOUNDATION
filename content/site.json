@@ -40,7 +40,8 @@
     ]
   },
   "brand": {
-    "name": "JRN FOUNDATION"
+    "name": "JRN FOUNDATION",
+    "logo": "/images/uploads/logo.png"
   },
   "pillars": {
     "intro": "Seluruh kerja JRN Foundation bertumpu pada empat pilar utama yang saling berhubungan — karena alam yang sehat membutuhkan masyarakat yang berdaya, budaya yang hidup, dan advokasi yang kuat.",
