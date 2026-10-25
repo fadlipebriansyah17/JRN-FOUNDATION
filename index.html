@@ -1312,12 +1312,27 @@ footer {
   });
 <script>
   window.addEventListener('DOMContentLoaded', function() {
-    var urlData = 'content' + String.fromCharCode(47) + 'home.json?v=' + Date.now();
+    var slash = String.fromCharCode(47);
+    var urlData = 'content' + slash + 'home.json?v=' + Date.now();
+    
     fetch(urlData)
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        var setTxt = function(id, val) { var el = document.getElementById(id); if (el && val) el.innerHTML = val; };
-        var setImg = function(id, val) { var el = document.getElementById(id); if (el && val) el.src = val; };
+        var setTxt = function(id, val) { 
+          var el = document.getElementById(id); 
+          if (el && val) el.innerHTML = val; 
+        };
+        
+        var setImg = function(id, val) { 
+          var el = document.getElementById(id); 
+          if (el && val) {
+            var cleanPath = Array.isArray(val) ? val[0] : val;
+            if (cleanPath.charAt(0) !== slash && cleanPath.indexOf('http') !== 0) {
+              cleanPath = slash + cleanPath;
+            }
+            el.src = encodeURI(cleanPath);
+          }
+        };
 
         setTxt('cms-hero-kicker', d.hero_kicker);
         setTxt('cms-hero-title', d.hero_title);
@@ -1331,6 +1346,7 @@ footer {
       });
   });
 </script>
+
 
 </body>
 </html>
