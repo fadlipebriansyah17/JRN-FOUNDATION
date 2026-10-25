@@ -139,306 +139,119 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   line-height: 1;
 }
 
-/* ── HERO ── */
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-img">
+    <img id="cms-hero-image"
+      src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=2400&q=90"
+      alt="Hutan tropis Nusantara">
+  </div>
+  <div class="hero-overlay"></div>
 
-.hero {
-  position: relative;
-  min-height: 100svh;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  color: #fff;
-  background: var(--teal);
-  isolation: isolate;
-  overflow: hidden;
-}
+  <div class="wrap hero-body">
+    <div class="hero-kicker">
+      <span class="hero-kicker-line"></span>
+      <span id="cms-hero-kicker">Jaga Raya Nusantara Foundation</span>
+    </div>
 
-.hero-img {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-}
+    <h1 id="cms-hero-title">
+      Menjaga<br>
+      <em>Nusantara</em>,<br>
+      Merawat Masa Depan.
+    </h1>
 
-.hero-img img {
-  object-position: center 35%;
-}
+    <p class="hero-sub" id="cms-hero-sub">
+      Bersama melestarikan alam, memberdayakan masyarakat,
+      dan merawat warisan budaya Nusantara untuk generasi mendatang.
+    </p>
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(105deg, rgba(5,24,20,.88) 0%, rgba(5,24,20,.45) 55%, rgba(5,24,20,.12) 100%),
-    linear-gradient(0deg, rgba(5,24,20,.55) 0%, transparent 45%);
-}
+    <div class="hero-actions">
+      <a class="btn-primary" href="#tentang">Kenali JRN</a>
+      <a class="btn-ghost" href="#program">Lihat Program</a>
+    </div>
+  </div>
 
-.hero-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 80px;
-  padding-top: 140px;
-}
+  <div class="wrap hero-foot">
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Tahun Bergerak</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">47</span>
+        <span class="stat-label">Program Aktif</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">120k</span>
+        <span class="stat-label">Pohon Ditanam</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">38</span>
+        <span class="stat-label">Provinsi Dijangkau</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-.hero-kicker {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-}
+<main>
 
-.hero-kicker-line {
-  width: 40px;
-  height: 1px;
-  background: var(--sand);
-  opacity: .7;
-}
+<!-- TENTANG -->
+<section class="about-section" id="tentang">
+  <div class="wrap">
+    <div class="section-marker">
+      <span class="marker-num">01</span>
+      <div class="marker-text">
+        <span class="marker-label">Tentang JRN</span>
+        <span class="marker-title">Siapa Kami</span>
+      </div>
+    </div>
 
-.hero-kicker span {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: .18em;
-  color: var(--sand);
-  opacity: .9;
-  text-transform: uppercase;
-}
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 id="cms-about-title">
+          Menjaga alam.<br>
+          Menguatkan masyarakat.<br>
+          <em>Melestarikan Nusantara.</em>
+        </h2>
 
-.hero h1 {
-  font-family: var(--serif);
-  font-size: clamp(52px, 7vw, 100px);
-  font-weight: 300;
-  line-height: .95;
-  letter-spacing: -.02em;
-  max-width: 820px;
-  margin-bottom: 28px;
-}
+        <p id="cms-about-text-1">
+          JRN Foundation adalah organisasi nirlaba Indonesia yang bergerak di bidang
+          konservasi lingkungan, pemberdayaan masyarakat, dan perlindungan
+          keanekaragaman hayati.
+        </p>
 
-.hero h1 em {
-  font-style: italic;
-  color: var(--sand);
-}
+        <p id="cms-about-text-2">
+          Kami percaya bahwa alam, manusia, dan budaya adalah satu kesatuan yang
+          saling menghidupi. Karena itu, kami hadir bukan hanya untuk merawat hutan
+          dan laut, tetapi juga untuk memperkuat komunitas lokal dan melestarikan
+          tradisi seni budaya Nusantara.
+        </p>
 
-.hero-sub {
-  max-width: 440px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255,255,255,.78);
-  margin-bottom: 36px;
-}
+        <a class="about-cta" href="#kolaborasi">Selengkapnya tentang kami</a>
+      </div>
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  background: var(--green);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .06em;
-  border-radius: 2px;
-  transition: background .2s, transform .2s;
-}
-
-.btn-primary:hover { background: var(--teal-soft); transform: translateY(-2px); }
-
-.btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  border: 1px solid rgba(255,255,255,.4);
-  color: rgba(255,255,255,.9);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .06em;
-  border-radius: 2px;
-  transition: border-color .2s, color .2s;
-}
-
-.btn-ghost:hover { border-color: var(--sand); color: var(--sand); }
-
-.hero-foot {
-  padding: 18px 0;
-  border-top: 1px solid rgba(255,255,255,.15);
-}
-
-.hero-stats {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.stat-num {
-  font-family: var(--serif);
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--sand);
-  line-height: 1;
-}
-
-.stat-label {
-  font-size: 10px;
-  letter-spacing: .1em;
-  color: rgba(255,255,255,.55);
-  text-transform: uppercase;
-}
-
-/* ── SECTION LABELS ── */
-
-.section-marker {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 48px;
-}
-
-.marker-num {
-  font-family: var(--serif);
-  font-size: 64px;
-  font-weight: 300;
-  line-height: 1;
-  color: var(--green-pale);
-  letter-spacing: -.03em;
-}
-
-.marker-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.marker-label {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: var(--green);
-}
-
-.marker-title {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 400;
-  color: var(--teal);
-  line-height: 1.1;
-}
-
-/* ── TENTANG ── */
-
-.about-section {
-  padding: 96px 0 80px;
-  background: var(--warm-white);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
-  align-items: start;
-}
-
-.about-left h2 {
-  font-family: var(--serif);
-  font-size: clamp(32px, 3.5vw, 52px);
-  font-weight: 300;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-  color: var(--teal);
-  margin-bottom: 24px;
-}
-
-.about-left h2 em {
-  font-style: italic;
-  color: var(--green);
-}
-
-.about-left p {
-  font-size: 14px;
-  line-height: 1.8;
-  color: var(--muted);
-  max-width: 480px;
-  margin-bottom: 16px;
-}
-
-.about-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 16px;
-  padding: 12px 24px;
-  background: var(--teal);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .05em;
-  border-radius: 2px;
-  transition: background .2s;
-}
-
-.about-cta:hover { background: var(--green); }
-
-.about-photo {
-  position: relative;
-}
-
-.about-photo-main {
-  width: 100%;
-  height: 460px;
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.about-photo-accent {
-  position: absolute;
-  bottom: -28px;
-  left: -28px;
-  width: 200px;
-  height: 160px;
-  border-radius: 2px;
-  overflow: hidden;
-  border: 4px solid var(--warm-white);
-}
-
-.about-badge {
-  position: absolute;
-  top: 24px;
-  right: -20px;
-  background: var(--green);
-  color: #fff;
-  padding: 16px 20px;
-  border-radius: 2px;
-  text-align: center;
-}
-
-.about-badge-num {
-  font-family: var(--serif);
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 1;
-  display: block;
-}
-
-.about-badge-text {
-  font-size: 9px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  opacity: .85;
-  display: block;
-  margin-top: 4px;
-}
-
+      <div class="about-photo">
+        <div class="about-photo-main">
+          <img id="cms-about-image"
+            src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=85"
+            alt="Tim JRN di lapangan"
+            loading="lazy">
+        </div>
+        <div class="about-photo-accent">
+          <img
+            src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=400&q=80"
+            alt="Pertunjukan budaya lokal"
+            loading="lazy">
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-num">2012</span>
+          <span class="about-badge-text">Berdiri sejak</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 /* ── PILAR ── */
 
 .pillars-section {
@@ -1498,6 +1311,20 @@ footer {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeMenu();
   });
+<script>
+  fetch('/content/home.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      if (data.hero_kicker) document.getElementById('cms-hero-kicker').textContent = data.hero_kicker;
+      if (data.hero_title) document.getElementById('cms-hero-title').innerHTML = data.hero_title;
+      if (data.hero_sub) document.getElementById('cms-hero-sub').textContent = data.hero_sub;
+      if (data.hero_image) document.getElementById('cms-hero-image').src = data.hero_image;
+      if (data.about_title) document.getElementById('cms-about-title').innerHTML = data.about_title;
+      if (data.about_text_1) document.getElementById('cms-about-text-1').textContent = data.about_text_1;
+      if (data.about_text_2) document.getElementById('cms-about-text-2').textContent = data.about_text_2;
+      if (data.about_image) document.getElementById('cms-about-image').src = data.about_image;
+    })
+    .catch(function(err) { console.log('Menunggu data admin:', err); });
 </script>
 
 </body>
