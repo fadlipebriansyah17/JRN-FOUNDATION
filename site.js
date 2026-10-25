@@ -3,6 +3,10 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const mark=(n,l,t)=>`<div class="section-marker"><span class="marker-num">${n}</span><div class="marker-text"><span class="marker-label">${l}</span><span class="marker-title">${t}</span></div></div>`;
 const img=(s,a='',lazy=1)=>`<img src="${esc(s)}" alt="${esc(a)}"${lazy?' loading="lazy"':''}>`;
 function render(d){
+const b=d.brand||{},bn=b.name||'JRN FOUNDATION';
+const brandHtml=(b.logo?`<img class="brand-logo" src="${esc(b.logo)}" alt="${esc(bn)}">`:`<span class="brand-symbol">${esc(b.symbol||'❧')}</span>`)+`<span class="brand-name">${esc(bn)}</span>`;
+const navBrand=document.querySelector('#navBar .brand');if(navBrand)navBrand.innerHTML=brandHtml;
+if(b.page_title)document.title=b.page_title;
 const h=d.hero,a=d.about,p=d.pillars,q=d.quote,g=d.program,j=d.join,c=d.contact;
 const hero=`<section class="hero" id="beranda"><div class="hero-img">${img(h.image,'Hero',0)}</div><div class="hero-overlay"></div>
 <div class="wrap hero-body"><div class="hero-kicker"><span class="hero-kicker-line"></span><span>${esc(h.kicker)}</span></div>
@@ -26,7 +30,7 @@ const news=`<section class="news-section" id="kegiatan"><div class="wrap"><div c
 <div class="news-grid">${(d.news||[]).map(x=>`<article class="news-card"><div class="news-img">${img(x.image,x.title)}</div><div class="news-body"><span class="news-tag">${esc(x.tag)}</span><span class="news-date">${esc(x.date)}</span><h3>${esc(x.title)}</h3><a class="news-read" href="#kontak">Baca selengkapnya →</a></div></article>`).join('')}</div></div></section>`;
 const join=`<section class="join-section" id="kolaborasi"><div class="join-bg">${img(j.image,'')}</div><div class="wrap join-inner"><p class="join-kicker">${esc(j.kicker)}</p><h2>${esc(j.heading)}</h2><p>${esc(j.text)}</p>
 <div class="join-actions"><a class="btn-primary" href="mailto:${esc(c.email)}">${esc(j.btn_1)}</a><a class="btn-ghost" href="#tentang">${esc(j.btn_2)}</a></div></div></section>`;
-const footer=`<footer id="kontak"><div class="wrap"><div class="footer-top"><div class="footer-brand-block"><span class="brand-symbol">❧</span><span class="brand-name">JRN FOUNDATION</span><p>${esc(c.description)}</p></div>
+const footer=`<footer id="kontak"><div class="wrap"><div class="footer-top"><div class="footer-brand-block">${brandHtml}<p>${esc(c.description)}</p></div>
 <div class="footer-col"><h4>Navigasi</h4><ul><li><a href="#tentang">Tentang Kami</a></li><li><a href="#pilar">Pilar Gerakan</a></li><li><a href="#program">Program</a></li><li><a href="#kegiatan">Kegiatan</a></li></ul></div>
 <div class="footer-col"><h4>Program</h4><ul>${(g.cards||[]).map(x=>`<li><a href="#program">${esc(x.title)}</a></li>`).join('')}</ul></div>
 <div class="footer-col"><h4>Kontak</h4><div class="footer-contact-info"><span>${esc(c.address)}</span><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></div></div></div>

@@ -15,6 +15,14 @@ collections:
         label: Semua Konten Website
         file: content/site.json
         fields:
+          - label: Logo dan Nama (Kiri Atas)
+            name: brand
+            widget: object
+            fields:
+              - {label: Nama di Kiri Atas, name: name, widget: string, required: false, hint: "Contoh JRN FOUNDATION. Kosong = memakai nama bawaan"}
+              - {label: Logo (gambar, opsional), name: logo, widget: image, required: false, hint: "Jika diisi, logo menggantikan simbol kecil. Disarankan PNG transparan"}
+              - {label: Simbol kecil (dipakai jika tidak ada logo), name: symbol, widget: string, required: false}
+              - {label: Judul Tab Browser, name: page_title, widget: string, required: false}
           - label: Halaman Utama (Hero)
             name: hero
             widget: object
